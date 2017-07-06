@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Validação usando javascript e HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            input:required{
+                background-color: yellow;
+            }
+            input[type=email]:valid{
+                border: 2px solid green;
+            }
+            input[type=email]:invalid{
+                border: 2px solid red;
+            }
+            input:checked{
+                height: 100px;
+                width: 100px;
+            }
+            input[type=tel]:enabled{
+                background: green;
+            }
+        </style>
+    </head>
+    <body>
+        <input required><br>
+        <input type="email" value="meuemail@email.com.br">Valido
+        <br><input type="email" value="meuemail.com.br">Invalido
+        <input type="radio" checked="checked">Estado checked
+        <input type="tel" value="habilitado">Habilitado<br>
+    </body>
+</html>
